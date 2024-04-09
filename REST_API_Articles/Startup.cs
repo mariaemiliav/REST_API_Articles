@@ -6,9 +6,7 @@ namespace REST_API_Articles
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
             services.AddScoped<IArticleRepository, ArticleRepository>();
-            services.AddHttpContextAccessor();
         }
     }
 }
